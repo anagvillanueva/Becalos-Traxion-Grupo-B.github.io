@@ -3,219 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafetería Muffin</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Tienda Kawai</title>
 </head>
-
-<!--Poniendo CSS con la etiqueta style-->
-<body style="background-color: blanchedalmond; font-family: 'Lucida Sans';">
+<body>
     <header>
-
-        <nav>
-            <div>
-                <span>Muffin</span>
-                <span>Cafetería & Pastelería </span>
-            </div>
-
-            <ul>
-                <!--Enlace interno-->
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#promociones">Promociones</a></li>
-                <li><a href="#menu">Menú</a></li>
+        <nav class="nav-principal">
+            <h1 class="logo">Tienda Kawai 🌸</h1>
+            <ul class="nav-lista">
+                <li><a href="#catalogo">Menú</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#entregas">Entregas</a></li>
+                <li><a href="#acerca">Acerca de</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
-
-        <section>
-            <div>
-                <h1 style="color:brown; text-align: center;">Cafetería Muffin 🎂</h1>
-                <p style="font-size: 22px;">Pan recién horneado, café calientito y pasteles hechos con cariño.</p>
-                <a href="#menu">Ver menú</a>
-            </div>
-
-            <div>
-                <img src="https://images.pexels.com/photos/227432/pexels-photo-227432.jpeg" alt="Café y pan dulce" width="300">
-            </div>
-        </section>
     </header>
 
     <main>
+        <!-- Catálogo -->
+        <section id="catalogo">
+            <h2>Catálogo de productos</h2>
+            <p>Encuentra los productos más kawaii para tu escritorio, tu cuarto y tus clases en línea.</p>
 
-        <!-- NOSOTROS -->
-        <section id="nosotros">
-            <div>
-                <h2>Sobre nosotros</h2>
-                <p>
-                    Nuestra pasión por la repostería nos inspira a hornear el mejor pan,
-                    crear pasteles únicos, servir el café más delicioso
-                    y reinventarnos todos los días.
-                </p>
-            </div>
-        </section>
-
-        <!-- PROMOCIONES -->
-        <section id="promociones">
-            <div>
-                <h2>Promociones</h2>
-                <ul>
-                    <li><strong>2x1</strong> en muffins los lunes y miércoles</li>
-                    <li><strong>Combo Súper Muffin:</strong> café + pan por $55</li>
-                    <li><strong>10% de descuento</strong> en pasteles de temporada</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- MENÚ -->
-        <section id="menu">
-            <div>
-                <h2>Menú</h2>
-
-                <div>
-                    <!-- Tarjeta 1 -->
-                    <article>
-                        <img src="https://i.blogs.es/396729/como-hacer-carlota-pay-de-limon-1-/450_1000.jpg" alt="Pay de limón" width="300">
-                        <div>
-                            <h3>Pay de limón</h3>
-                            <p>Base crujiente, relleno cremoso de limón y crema batida.</p>
-                            <p>$280</p>
-                            <button style="border-radius: 8px; background-color: chocolate; color: white;">Agregar</button>
-                        </div>
-                    </article>
-
-                    <!-- Tarjeta 2 -->
-                    <article>
-                        <img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg" alt="Muffin de zanahoria" width="300">
-                        <div>
-                            <h3>Muffin de zanahoria</h3>
-                            <p>Muffin húmedo con nuez y glaseado de queso crema.</p>
-                            <p>$45</p>
-                            <button style="border-radius: 8px; background-color: chocolate; color: white;">Agregar</button>
-                        </div>
-                    </article>
-
-                    <!-- Tarjeta 3 -->
-                    <article>
-                        <img src="https://images.pexels.com/photos/2915289/pexels-photo-2915289.jpeg" alt="Pastel de chocolate" width="300">
-                        <div>
-                            <h3>Pastel de chocolate</h3>
-                            <p>Bizcocho intenso con ganache suave y chispas.</p>
-                            <p>$350</p>
-                            <button style="border-radius: 8px; background-color: chocolate; color: white;">Agregar</button>
-                        </div>
-                    </article>
+            <div class="catalogo-contenedor">
+                <!-- Producto 1 -->
+                <div class="producto-tarjeta">
+                    <img src="https://www.duckstore.es/img/cms/megamenu_deportes2.png" alt="Patito de hule" class="producto-img">
+                    <h3 class="producto-titulo">Patito de hule</h3>
+                    <p class="producto-desc">
+                        Patito coleccionable perfecto para decorar tu escritorio o tu bañera. 
+                        Disponible en varios colores.
+                    </p>
+                    <p class="producto-precio">$79 MXN</p>
+                    <button class="producto-btn">Agregar al carrito</button>
                 </div>
 
-                <p>Productos en tu carrito: <span>0</span></p>
+                <!-- Producto 2 -->
+                <div class="producto-tarjeta">
+                    <img src="https://asset.action.com/image/upload/t_digital_product_image/w_1080/23189125.webp" alt="Washitape decorativo" class="producto-img">
+                    <h3 class="producto-titulo">Washitape kawaii</h3>
+                    <p class="producto-desc">
+                        Cinta decorativa para apuntes bonitos, bullet journal y planners.
+                        Incluye diseños pastel y personajes kawaii.
+                    </p>
+                    <p class="producto-precio">$55 MXN</p>
+                    <button class="producto-btn">Agregar al carrito</button>
+                </div> 
+
+                <!-- Producto 3 -->
+                <div class="producto-tarjeta">
+                    <img src="https://images.pexels.com/photos/7479801/pexels-photo-7479801.jpeg" alt="Libreta kawaii" class="producto-img">
+                    <h3 class="producto-titulo">Libreta pastel</h3>
+                    <p class="producto-desc">
+                        Libreta tamaño A5 con hojas rayadas y portada pastel. Ideal para la escuela o la oficina.
+                    </p>
+                    <p class="producto-precio">$99 MXN</p>
+                    <button class="producto-btn">Agregar al carrito</button>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="producto-tarjeta">
+                    <img src="https://images.pexels.com/photos/5088008/pexels-photo-5088008.jpeg" alt="Pluma de gel kawaii" class="producto-img">
+                    <h3 class="producto-titulo">Plumas de gel</h3>
+                    <p class="producto-desc">
+                        Set de 6 plumas de gel en tonos pastel, punta fina, perfectas para subrayar y hacer apuntes lindos.
+                    </p>
+                    <p class="producto-precio">$89 MXN</p>
+                    <button class="producto-btn">Agregar al carrito</button>
+                </div>
             </div>
         </section>
 
-        <!-- RECETA -->
-        <section>
-            <div>
-                <h2>Receta de la abuela</h2>
-                <img src="https://cdn.recetasderechupete.com/wp-content/uploads/2019/09/Muffins-de-zanahoria.jpg" alt="" width="300">
-                <h3>Muffin de zanahoria</h3>
-                <p>
-                    Una receta tradicional con zanahoria rallada,
-                    especias suaves y el toque secreto de la abuela.
-                </p>
-
-                <ol>
-                    <li>Preparar los ingredientes: harina, zanahoria, azúcar, huevos, aceite y especias.</li>
-                    <li>Mezclar todo y llenar los moldes.</li>
-                    <li>Hornear a 180°C durante 20–25 minutos.</li>
-                </ol>
-            </div>
+        <!-- Entregas -->
+        <section id="entregas">
+            <h2>Entregas y envíos</h2>
+            <p>Queremos que tus productos kawaii lleguen rápido y seguros. Así funcionan nuestras entregas:</p>
+            <ul>
+                <li><strong>Envíos nacionales:</strong> A todo México por paquetería (3 a 7 días hábiles).</li>
+                <li><strong>Envíos express:</strong> Disponible en zonas seleccionadas (1 a 2 días hábiles).</li>
+                <li><strong>Entrega local:</strong> Punto de entrega acordado en CDMX (sin costo extra).</li>
+                <li><strong>Seguimiento:</strong> Te enviamos tu número de guía por correo o WhatsApp.</li>
+            </ul>
+            <p><strong>Forma de pago:</strong> Transferencia, tarjeta de crédito/débito y algunas billeteras digitales.</p>
         </section>
 
+        <!-- Acerca de -->
+        <section id="acerca">
+            <h2>Acerca de Tienda Kawai</h2>
+            <p>
+                Tienda Kawai nace del amor por la papelería bonita, los detalles especiales y el estilo 
+                tierno que hace más ligeros los días de escuela, trabajo y estudio.
+            </p>
+            <p>
+                Seleccionamos productos funcionales pero estéticos, pensando en estudiantes, creadores de 
+                contenido y personas que aman organizar su espacio con un toque pastel.
+            </p>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>¿Tienes dudas sobre un producto, envíos o pedidos personalizados? Escríbenos.</p>
+
+            <div class="contacto-info">
+                <p><strong>Correo:</strong> hola@tiendakawai.mx</p>
+                <p><strong>WhatsApp:</strong> +52 55 0000 0000</p>
+                <p><strong>Horario de atención:</strong> Lunes a viernes de 10:00 a 19:00 hrs.</p>
+            </div>
+
+            <form class="form-contacto">
+                <h3>Envíanos un mensaje</h3>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos en qué podemos ayudarte"></textarea>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
     </main>
 
     <footer>
-
-        <!-- CONTACTO -->
-        <div>
-            <section id="contacto">
-                <h2>Contacto</h2>
-                <p>Visítanos o haz tu pedido especial.</p>
-
-                <h3>Pedidos especiales</h3>
-                <form>
-
-                    <div>
-                        <label>Nombre completo:</label>
-                        <input type="text" placeholder="Tu nombre">
-                    </div>
-
-                    <div>
-                        <label>Celular:</label>
-                        <input type="tel" placeholder="Tu WhatsApp">
-                    </div>
-
-                    <div>
-                        <label>Correo electrónico:</label>
-                        <input type="email" placeholder="Tu correo">
-                    </div>
-
-                    <!-- SABORES -->
-                    <fieldset>
-                        <legend>Sabor del pastel:</legend>
-
-                        <label>
-                            <input type="radio" name="sabor" value="Chocolate"> Chocolate
-                        </label>
-
-                        <label>
-                            <input type="radio" name="sabor" value="Vainilla"> Vainilla
-                        </label>
-
-                        <label>
-                            <input type="radio" name="sabor" value="Red Velvet"> Red Velvet
-                        </label>
-
-                        <label>
-                            <input type="radio" name="sabor" value="Tres leches"> Tres leches
-                        </label>
-                    </fieldset>
-
-                    <!-- EXTRAS -->
-                    <fieldset>
-                        <legend>Extras:</legend>
-
-                        <label><input type="checkbox" value="Nuez"> Nuez</label>
-                        <label><input type="checkbox" value="Fresas"> Fresas</label>
-                        <label><input type="checkbox" value="Vela"> Vela de cumpleaños</label>
-                        <label><input type="checkbox" value="Decoración personalizada"> Decoración personalizada</label>
-                    </fieldset>
-
-                    <div>
-                        <label>Fecha del evento:</label>
-                        <input type="date">
-                    </div>
-
-                    <div>
-                        <label>Imagen de referencia:</label>
-                        <input type="file" accept="image/*">
-                    </div>
-
-                    <button type="submit" style="border-radius: 8px; background-color: chocolate; color: white;">Enviar pedido</button>
-                </form>
-            </section>
-
-            <!-- REDES -->
-            <section>
-                <h2>Síguenos</h2>
-                <ul>
-                    <li><a href="https://www.facebook.com/elglobooficial/?locale=es_LA" target="_blank">Facebook</a></li>
-                    <li><a href="https://www.instagram.com/pasteleriaideal/?hl=es" target="_blank">Instagram</a></li>
-                    <li><a href="https://www.tiktok.com/@camille.littlecookie/video/7405358458628852998" target="_blank">TikTok</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=kmORdzA8nvA" target="_blank">YouTube</a></li>
-                </ul>
-            </section>
-        </div>
-
-        <p>© 2025 Cafetería Muffin – Todos los derechos reservados.</p>
+        <p>&copy; 2025 Tienda Kawai. Todos los derechos reservados.</p>
+        <p>Síguenos en redes: Instagram @tiendakawai · TikTok @tiendakawai</p>
     </footer>
-
 </body>
 </html>
