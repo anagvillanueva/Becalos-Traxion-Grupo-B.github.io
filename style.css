@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
 /* RESET BÁSICO 
    - Elimina márgenes y padding por defecto
    - Aplica box-sizing: border-box para que el ancho incluya padding/border
@@ -62,6 +64,7 @@ header, main, footer{
 
 /* TARJETA DEL PRODUCTO */
 .producto-tarjeta{
+    text-align: center;
     background: #fff;
     border-radius: 15px;
     overflow: hidden;
@@ -172,4 +175,3 @@ footer{
     background-color: #ffe2f4;
     color: #4b004b;
 }
-

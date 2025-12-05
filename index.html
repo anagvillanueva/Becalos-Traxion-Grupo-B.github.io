@@ -11,7 +11,13 @@
     <title>Tienda Kawai</title>
 </head>
 <body>
-    <header>
+
+        <header class="top-banner">
+            <p> Envios gratis a partir de $499 </p>
+        </header>
+
+
+        <!--Dejando a la barra sola para aplicar Position Sticty-->
         <nav class="nav-principal">
             <h1 class="logo">Tienda Kawai 🌸</h1>
             <ul class="nav-lista">
@@ -22,7 +28,7 @@
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
-    </header>
+
 
     <main>
         <!-- Catálogo -->
@@ -45,6 +51,8 @@
 
                 <!-- Producto 2 -->
                 <div class="producto-tarjeta">
+                    <!--Agregar badge de oferta Position:Absolute-->
+                    <span class="producto-badge">Oferta PLUS</span>
                     <img src="https://asset.action.com/image/upload/t_digital_product_image/w_1080/23189125.webp" alt="Washitape decorativo" class="producto-img">
                     <h3 class="producto-titulo">Washitape kawaii</h3>
                     <p class="producto-desc">
@@ -68,6 +76,7 @@
 
                 <!-- Producto 4 -->
                 <div class="producto-tarjeta">
+                    <span class="producto-badge">Oferta PLUS</span>
                     <img src="img/plumas-gel.jpeg" alt="Pluma de gel kawaii" class="producto-img">
                     <h3 class="producto-titulo">Plumas de gel</h3>
                     <p class="producto-desc">
@@ -131,12 +140,15 @@
                 <button type="submit">Enviar mensaje</button>
             </form>
         </aside>
-</section>
+    </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Tienda Kawai. Todos los derechos reservados.</p>
         <p>Síguenos en redes: Instagram @tiendakawai · TikTok @tiendakawai</p>
     </footer>
+
+    <a href="#catalogo" class="boton-carrito">Ver carrito 🛒</a>
+
 </body>
 </html>
