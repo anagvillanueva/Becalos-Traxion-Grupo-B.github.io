@@ -32,6 +32,7 @@ header, main{
     padding: 6px 10px;
     font-size: 14px;
     color:#6d4c41;
+    text-transform: uppercase;
 }
 /* NAV */
 .nav-principal{
@@ -42,6 +43,12 @@ header, main{
     position: sticky;
     top:0;
     z-index: 1000;
+
+    /*Agregando Flexbox*/
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .logo{
@@ -52,6 +59,11 @@ header, main{
 /* Menú de navegación */
 .nav-lista{
     list-style: none;
+
+    /*Agregando Flexbox*/
+    display:flex;
+    gap: 20px;
+    align-items: center;
 }
 
 /* Estilo de los enlaces del menú */
@@ -69,6 +81,11 @@ header, main{
 /* CONTENEDOR DE PRODUCTOS*/
 .catalogo-contenedor{
     padding: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 /* TARJETA DEL PRODUCTO */
@@ -82,6 +99,8 @@ header, main{
     transition: transform .2s ease, box-shadow .2s ease;
     /*Para que la badge absoluta se posicione dentro*/
     position: relative;
+
+    flex: 1 1 240px; /*Ocupa minimo 240px, puede crecer y encoger*/
 }
 
 /* Efecto al pasar el mouse */
@@ -170,6 +189,15 @@ li{
 /* CONTACTO EN DOS COLUMNAS*/
 .contacto-section{
     margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.contacto-contenido, 
+.contaco-aside{
+    flex: 1 1 280px;
 }
 
 /* FORMULARIO */
@@ -177,6 +205,10 @@ li{
     background: white;
     padding: 20px;
     border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 /* Inputs y textarea del formulario */
