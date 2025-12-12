@@ -186,6 +186,69 @@ li{
     margin-bottom: 6px;
 }
 
+/*SECCION EQUIPO*/ 
+.equipo-section{
+    text-align: center;
+    padding: 40px 25px;
+}
+
+.equipo-section p{
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+.equipo-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 60px;
+}
+
+.equipo-card{
+    background-color: #f7eccf;
+    width: 280px;
+    padding: 60px 20px 30px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.15);
+    text-align: center;
+    /*Flex interno*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:relative;
+}
+
+.equipo-foto{
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+
+    position: absolute;
+    top: -55px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.equipo-card h3{
+    margin-top:15px;
+    color: rgb(130, 118, 118);
+    font-size: 20px;
+}
+
+.equipo-rol{
+    font-size: 14px;
+    color: #a0806a;
+    margin: 10px;
+}
+
+.equipo-desc{
+    font-size: 14px;
+    color: #5a4f48;
+    line-height: 1;
+}
 /* CONTACTO EN DOS COLUMNAS*/
 .contacto-section{
     margin-top: 40px;
